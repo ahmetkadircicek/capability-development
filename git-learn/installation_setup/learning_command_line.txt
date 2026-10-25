@@ -1,0 +1,15 @@
+ls
+
+cd project_name
+
+touch
+
+git add .
+
+git commit -m ""
+
+open .
+
+pwd
+
+cd /change_directory

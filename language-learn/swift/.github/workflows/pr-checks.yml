@@ -1,0 +1,41 @@
+name: pr-checks
+
+on:
+  pull_request:
+    types: [opened, edited, synchronize, reopened]
+
+permissions:
+  contents: read
+
+jobs:
+  branch-name:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Check branch name
+        env:
+          BRANCH: ${{ github.head_ref }}
+        run: |
+          pattern='^(drill|build|capstone|docs|article|fix|chore)/[a-z0-9][a-z0-9._-]*$'
+          if [[ "$BRANCH" =~ $pattern ]]; then
+            echo "✅ Branch adı uygun: $BRANCH"
+          else
+            echo "::error::Branch adı '$BRANCH' formata uymuyor. Beklenen: <tip>/<id>-<konu>, ör. drill/01-03-optionals. Tipler: drill, build, capstone, docs, article, fix, chore"
+            exit 1
+          fi
+
+  pr-title:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Check PR title (Conventional Commits)
+        env:
+          TITLE: ${{ github.event.pull_request.title }}
+        run: |
+          pattern='^(feat|fix|docs|test|refactor|style|perf|build|ci|chore)(\([a-z0-9._-]+\))?!?: [^ ].+$'
+          if [[ "$TITLE" =~ $pattern ]]; then
+            echo "✅ PR başlığı uygun: $TITLE"
+          else
+            echo "::error::PR başlığı '$TITLE' conventional commit formatına uymuyor. Ör: feat(01-03): add optional binding exercise. Düzeltmek için: gh pr edit --title \"...\""
+            exit 1
+          fi
