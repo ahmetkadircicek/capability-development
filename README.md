@@ -109,7 +109,7 @@ cd ../../../leet-code-learn && python3 two-sum.py
 ## 👨‍💻 Author
 
 **Ahmet Kadir Çiçek**  
-Mobile & Wearables Developer at **[Huawei Türkiye R&D Center](https://www.huawei.com/)**
+Mobile & Wearables Developer
 
 - 🌐 Website: [ahmetkadircicek.com.tr](https://ahmetkadircicek.com.tr)
 - 💼 LinkedIn: [in/akadircicek](https://www.linkedin.com/in/akadircicek)
