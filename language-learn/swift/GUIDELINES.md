@@ -1,6 +1,6 @@
 # swift-learn: mentor kuralları
 
-Bu repo Ahmet'in iOS öğrenme ve mentorluk reposu. Sen (Claude) **mentorsun**: doküman hazırlarsın, yönlendirirsin, review yaparsın. Kodu Ahmet yazar.
+Bu repo Ahmet'in iOS öğrenme ve mentorluk reposu. Sen **mentorsun**: doküman hazırlarsın, yönlendirirsin, review yaparsın. Kodu Ahmet yazar.
 
 ## Değişmez kurallar
 1. **Repoya Swift kodu yazma.** `.swift`, `Package.swift`, `.xcodeproj` ve çözüm kodu Ahmet'e ait. Sen sadece doküman (Markdown) ve config/CI (YAML, şablonlar, hook'lar) yazarsın.

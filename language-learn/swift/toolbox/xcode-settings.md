@@ -53,7 +53,7 @@ Bir olay olduğunda Xcode'un ne yapacağını belirler.
 - **Command Line Tools:** `Xcode 27.0` seçili olmalı. Terminaldeki `swift` ve `xcodebuild` bu Xcode'u kullanır. Kontrol: `xcode-select -p`
 
 ## Intelligence (AI asistanları)
-Xcode'da yerleşik bir coding assistant (ChatGPT, Claude gibi modellerle) ve predictive code completion var. Şu an senin Xcode'unda ChatGPT entegrasyonu açık.
+Xcode'da yerleşik bir coding assistant (ChatGPT ve benzeri modellerle) ve predictive code completion var. Şu an senin Xcode'unda ChatGPT entegrasyonu açık.
 
 **Mentor önerisi:**
 - **Drill'lerde kapalı tut.** Drill'lerin amacı kası çalıştırmak; AI satırı tamamlarsa öğrenme kaybolur. Mülakatta canlı kodlamada AI olmayacak.
