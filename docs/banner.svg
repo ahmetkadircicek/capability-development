@@ -1,160 +1,30 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 420" width="100%" height="100%">
-  <defs>
-    <!-- Background Gradient -->
-    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#0a0d14"/>
-      <stop offset="50%" stop-color="#0e1320"/>
-      <stop offset="100%" stop-color="#070a0f"/>
-    </linearGradient>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <rect width="1200" height="630" fill="#ffffff"/>
+  <rect x="0.5" y="0.5" width="1199" height="629" fill="none" stroke="#e5e5e5" stroke-width="1"/>
 
-    <!-- Card Gradient -->
-    <linearGradient id="cardGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#161c2d" stop-opacity="0.85"/>
-      <stop offset="100%" stop-color="#0f1422" stop-opacity="0.95"/>
-    </linearGradient>
+  <!-- Top bar -->
+  <text x="80" y="80" fill="#737373" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif" font-size="14" font-weight="600" letter-spacing="1.5">ENGINEERING MONOREPO</text>
+  <text x="1120" y="80" text-anchor="end" fill="#a3a3a3" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif" font-size="14" font-weight="500">POLYGLOT &amp; ARCHITECTURE</text>
 
-    <!-- Glowing Accents -->
-    <linearGradient id="primaryAccent" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00D2FF"/>
-      <stop offset="50%" stop-color="#3a7bd5"/>
-      <stop offset="100%" stop-color="#8A2387"/>
-    </linearGradient>
+  <!-- Divider -->
+  <line x1="80" y1="110" x2="1120" y2="110" stroke="#f0f0f0" stroke-width="1"/>
 
-    <linearGradient id="langGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FF5E62"/>
-      <stop offset="100%" stop-color="#FF9966"/>
-    </linearGradient>
+  <!-- Main Content -->
+  <g transform="translate(80, 190)">
+    <!-- App mark / icon -->
+    <rect width="140" height="140" rx="31" fill="#0F172A"/>
+    <text x="70" y="88" text-anchor="middle" fill="#10B981" font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="54" font-weight="700">&gt;_</text>
 
-    <linearGradient id="mobileGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#00C9FF"/>
-      <stop offset="100%" stop-color="#92FE9D"/>
-    </linearGradient>
-
-    <linearGradient id="gitGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#F1502F"/>
-      <stop offset="100%" stop-color="#E44D26"/>
-    </linearGradient>
-
-    <linearGradient id="algoGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#FFA116"/>
-      <stop offset="100%" stop-color="#FF6B6B"/>
-    </linearGradient>
-
-    <!-- Ambient Glow Filter -->
-    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
-      <feGaussianBlur stdDeviation="30" result="blur"/>
-      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
-    </filter>
-
-    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
-      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1f293d" stroke-width="0.75" stroke-opacity="0.4"/>
-    </pattern>
-  </defs>
-
-  <!-- Canvas Background -->
-  <rect width="1200" height="420" rx="16" fill="url(#bgGrad)"/>
-  <rect width="1200" height="420" rx="16" fill="url(#grid)"/>
-
-  <!-- Top Accent Bar -->
-  <rect x="0" y="0" width="1200" height="5" fill="url(#primaryAccent)"/>
-
-  <!-- Ambient Light Orbs -->
-  <circle cx="200" cy="80" r="140" fill="#00D2FF" opacity="0.08" filter="url(#glow)"/>
-  <circle cx="1000" cy="180" r="160" fill="#8A2387" opacity="0.09" filter="url(#glow)"/>
-
-  <!-- Badge Pill -->
-  <g transform="translate(60, 48)">
-    <rect width="260" height="28" rx="14" fill="#1b2438" stroke="#2d3b5e" stroke-width="1"/>
-    <circle cx="14" cy="14" r="5" fill="#00D2FF"/>
-    <text x="28" y="19" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="11" font-weight="700" letter-spacing="1.2">KNOWLEDGE &amp; SKILL ACCELERATOR</text>
+    <!-- Text block -->
+    <text x="180" y="50" fill="#111111" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Segoe UI', sans-serif" font-size="76" font-weight="700" letter-spacing="-1.5">Capability Development</text>
+    <text x="180" y="98" fill="#595959" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif" font-size="24" font-weight="400">Unified repository for language roadmaps, mobile architectures and algorithms.</text>
+    <text x="180" y="136" fill="#8c8c8c" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif" font-size="17" font-weight="500">Swift · TypeScript · Python · Flutter · React Native · LeetCode</text>
   </g>
 
-  <!-- Title & Subtitle -->
-  <text x="60" y="118" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="34" font-weight="800" letter-spacing="-0.5">Capability Development</text>
-  <text x="60" y="146" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif" font-size="15" font-weight="400">Polyglot Language Deep Dives · Mobile Frameworks · Git Mastery · Algorithmic Problem Solving</text>
+  <!-- Bottom info -->
+  <text x="80" y="555" fill="#8c8c8c" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif" font-size="17" font-weight="500">ahmetkadircicek.com.tr</text>
+  <text x="1120" y="555" text-anchor="end" fill="#a3a3a3" font-family="-apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Segoe UI', sans-serif" font-size="15" font-weight="500">Ahmet Kadir Çiçek</text>
 
-  <!-- Module Cards Grid -->
-
-  <!-- Card 1: Language Learn -->
-  <g transform="translate(60, 180)">
-    <rect width="250" height="190" rx="14" fill="url(#cardGrad)" stroke="#222b40" stroke-width="1.5"/>
-    <rect x="0" y="0" width="250" height="4" rx="2" fill="url(#langGrad)"/>
-    
-    <!-- Icon Sphere -->
-    <rect x="20" y="22" width="38" height="38" rx="10" fill="#20293d"/>
-    <text x="32" y="47" font-size="20">⚡</text>
-
-    <text x="68" y="40" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700">Language</text>
-    <text x="68" y="56" fill="#FF8364" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">Swift · JS · Python</text>
-
-    <text x="20" y="95" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="400">
-      <tspan x="20" dy="0">• Swift 6 &amp; Concurrency</tspan>
-      <tspan x="20" dy="20">• Modern JavaScript ES6+</tspan>
-      <tspan x="20" dy="20">• Python 3 Data Types &amp; OOP</tspan>
-      <tspan x="20" dy="20">• Async / Await &amp; Closures</tspan>
-    </text>
-  </g>
-
-  <!-- Card 2: Mobile Learn -->
-  <g transform="translate(335, 180)">
-    <rect width="250" height="190" rx="14" fill="url(#cardGrad)" stroke="#222b40" stroke-width="1.5"/>
-    <rect x="0" y="0" width="250" height="4" rx="2" fill="url(#mobileGrad)"/>
-
-    <!-- Icon Sphere -->
-    <rect x="20" y="22" width="38" height="38" rx="10" fill="#20293d"/>
-    <text x="32" y="47" font-size="20">📱</text>
-
-    <text x="68" y="40" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700">Mobile</text>
-    <text x="68" y="56" fill="#00D2FF" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">Flutter · React Native</text>
-
-    <text x="20" y="95" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="400">
-      <tspan x="20" dy="0">• IKEA Store Clone &amp; OTP</tspan>
-      <tspan x="20" dy="20">• Expo Router &amp; Navigation</tspan>
-      <tspan x="20" dy="20">• Riverpod &amp; State Mgmt</tspan>
-      <tspan x="20" dy="20">• Clean Component Systems</tspan>
-    </text>
-  </g>
-
-  <!-- Card 3: Git Learn -->
-  <g transform="translate(610, 180)">
-    <rect width="250" height="190" rx="14" fill="url(#cardGrad)" stroke="#222b40" stroke-width="1.5"/>
-    <rect x="0" y="0" width="250" height="4" rx="2" fill="url(#gitGrad)"/>
-
-    <!-- Icon Sphere -->
-    <rect x="20" y="22" width="38" height="38" rx="10" fill="#20293d"/>
-    <text x="32" y="47" font-size="20">🌿</text>
-
-    <text x="68" y="40" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700">Version Control</text>
-    <text x="68" y="56" fill="#F1502F" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">Git CLI &amp; Workflows</text>
-
-    <text x="20" y="95" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="400">
-      <tspan x="20" dy="0">• GitFlow &amp; Feature Branches</tspan>
-      <tspan x="20" dy="20">• Interactive Rebase &amp; Stash</tspan>
-      <tspan x="20" dy="20">• Global Configuration</tspan>
-      <tspan x="20" dy="20">• Merge Conflict Strategies</tspan>
-    </text>
-  </g>
-
-  <!-- Card 4: LeetCode Learn -->
-  <g transform="translate(885, 180)">
-    <rect width="255" height="190" rx="14" fill="url(#cardGrad)" stroke="#222b40" stroke-width="1.5"/>
-    <rect x="0" y="0" width="255" height="4" rx="2" fill="url(#algoGrad)"/>
-
-    <!-- Icon Sphere -->
-    <rect x="20" y="22" width="38" height="38" rx="10" fill="#20293d"/>
-    <text x="32" y="47" font-size="20">💡</text>
-
-    <text x="68" y="40" fill="#ffffff" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="16" font-weight="700">LeetCode</text>
-    <text x="68" y="56" fill="#FFA116" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12" font-weight="600">Algorithms &amp; Big-O</text>
-
-    <text x="20" y="95" fill="#94a3b8" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="12.5" font-weight="400">
-      <tspan x="20" dy="0">• 25+ Python &amp; JS Drills</tspan>
-      <tspan x="20" dy="20">• Two Pointers &amp; Sliding Window</tspan>
-      <tspan x="20" dy="20">• Dynamic Programming &amp; Trees</tspan>
-      <tspan x="20" dy="20">• Time &amp; Space Complexity</tspan>
-    </text>
-  </g>
-
-  <!-- Subtitle bottom -->
-  <text x="1140" y="400" text-anchor="end" fill="#475569" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-size="11" font-weight="600">Ahmet Kadir Çiçek · Engineering Playbook</text>
+  <!-- Accent bottom line -->
+  <rect x="0" y="618" width="1200" height="12" fill="#059669"/>
 </svg>
