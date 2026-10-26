@@ -1,6 +1,6 @@
 <div align="center">
 
-![Capability Development Banner](docs/banner.svg)
+![Capability Development](docs/cover.png)
 
 # Capability Development 🚀
 
@@ -32,7 +32,7 @@ Rather than maintaining fragmented learning repositories, this mono-repo structu
 ```
 capability-development/
 ├── docs/                                  # Master vector banners & visual architecture assets
-│   └── banner.svg
+│   └── cover.png
 ├── language-learn/                        # Polyglot language deep-dives
 │   ├── swift/                             # Complete Swift 6 roadmap (00-13, capstones, toolbox)
 │   ├── javascript/                        # ES6+, DOM manipulation, async JS, closures & test-cases
